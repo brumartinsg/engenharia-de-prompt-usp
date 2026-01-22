@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Engenharia de Prompt – Exemplo Prático</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Engenharia de Prompt na Prática</h1>
+    <p>
+      Um exemplo simples mostrando como a forma de escrever um prompt
+      impacta diretamente a qualidade das respostas de uma Inteligência Artificial.
+    </p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>O que é Engenharia de Prompt?</h2>
+      <p>
+        Engenharia de prompt é a prática de estruturar instruções claras,
+        contextualizadas e bem definidas para obter respostas mais úteis,
+        precisas e alinhadas ao objetivo desejado ao interagir com modelos de IA.
+      </p>
+    </section>
+
+    <section>
+      <h2>Exemplo de Prompt Ruim ❌</h2>
+
+      <div class="prompt-box bad">
+        <div class="prompt-title">Prompt</div>
+        <pre id="prompt-ruim">
+Me ajude a analisar dados.
+        </pre>
+        <button onclick="copiarTexto('prompt-ruim')">Copiar prompt</button>
+      </div>
+
+      <p>
+        Esse prompt é problemático porque não define contexto, objetivo,
+        formato da resposta ou público-alvo.
+      </p>
+    </section>
+
+    <section>
+      <h2>Exemplo de Prompt Bom ✅</h2>
+
+      <div class="prompt-box good">
+        <div class="prompt-title">Prompt</div>
+        <pre id="prompt-bom">
+Você é um analista de dados experiente.
+
+Tenho uma base de dados de vendas com as colunas:
+- data
+- produto
+- canal
+- faturamento
+
+Objetivo:
+Identificar quais produtos tiveram queda de faturamento no último mês.
+
+Formato da resposta:
+- resumo em texto
+- lista com os 3 produtos com maior queda
+- sugestão de possíveis causas
+
+Contexto:
+Essa análise será apresentada para o time comercial.
+        </pre>
+        <button onclick="copiarTexto('prompt-bom')">Copiar prompt</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Por que o prompt bom funciona melhor?</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Elemento</th>
+            <th>Prompt Ruim</th>
+            <th>Prompt Bom</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Papel da IA</td>
+            <td>Não definido</td>
+            <td>Analista de dados</td>
+          </tr>
+          <tr>
+            <td>Objetivo</td>
+            <td>Vago</td>
+            <td>Claro e específico</td>
+          </tr>
+          <tr>
+            <td>Contexto</td>
+            <td>Inexistente</td>
+            <td>Público e uso definidos</td>
+          </tr>
+          <tr>
+            <td>Formato</td>
+            <td>Livre</td>
+            <td>Estruturado</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Checklist de um Bom Prompt</h2>
+      <ul>
+        <li>✅ Definir o papel da IA</li>
+        <li>✅ Explicar o contexto</li>
+        <li>✅ Declarar o objetivo</li>
+        <li>✅ Definir o formato da resposta</li>
+        <li>✅ Informar o público-alvo</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      Projeto criado durante o minicurso de <strong>Engenharia de Prompt – USP</strong><br>
+      por <a href="https://github.com/brumartinsg" target="_blank">Bruna Martins</a>
+    </p>
+  </footer>
+
+  <!-- JS externo -->
+  <script src="script.js"></script>
+</body>
+</html>
